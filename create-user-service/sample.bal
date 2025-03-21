@@ -21,7 +21,7 @@ type CreateAsgardeoUserPayload record {
 };
 
 // HTTP client configuration to call the external SCIM2 Users endpoint
-http:Client asgardeoClient = check new("https://dev.api.asgardeo.io/t/orge2eabbclientus");
+http:Client asgardeoClient = check new("");
 
 service / on new http:Listener(8090) {
 
